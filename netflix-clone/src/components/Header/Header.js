@@ -11,7 +11,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
         <div className='header_container'>
             <div className='header_left'>
                 <ul>
-                    <li><img src={logo} width={100}/></li>
+                    <li><img src={logo} width={100} alt='Netflix-logo'/></li>
                     <li>Home</li>
                     <li>TVShows</li>
                     <li>Movies</li>

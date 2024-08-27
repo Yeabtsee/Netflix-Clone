@@ -12,7 +12,7 @@ function Footer() {
           <FacebookOutlinedIcon />
           <InstagramIcon />
           <YouTubeIcon />
-    </div>
+        </div>
     <div className= 'footer_data' >
       <div>
         <ul>

@@ -1,8 +1,9 @@
 .footer_outer_container{
-    background-color: O #111;
+    background-color:#111;
     color: grey;
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 }
 .footer_inner_container{
     width: 60%;
