@@ -6,7 +6,7 @@ import './footer.css'
 
 function Footer() {
   return (
-    <div className= 'footer_outer_container' >
+    <footer className= 'footer_outer_container' >
       <div className='footer_inner_container' >
         <div className= 'footer_icons' >
           <FacebookOutlinedIcon />
@@ -50,7 +50,8 @@ function Footer() {
         &copy; 1997-2024 Netflix, Inc.
      </div>
     </div>
-   </div>
-  )
+   </footer>
+  
+)
 }
 export default Footer;
