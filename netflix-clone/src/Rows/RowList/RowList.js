@@ -36,8 +36,8 @@ const RowList = () => {
           fetchUrl={requests.fetchTvShow}         
       />
       <Row
-          title="ROMANCE MOVIES"
-          fetchUrl={requests.fetchRomanceMovies}        
+          title="HISTORY MOVIES"
+          fetchUrl={requests.fetchHistoryMovies}        
       />
       <Row
           title="COMEDY MOVIES"
