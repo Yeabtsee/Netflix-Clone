@@ -1,0 +1,131 @@
+/* Header Outer Container */
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  height: 10vh;
+  color: white;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  padding: 0 60px;
+}
+
+/* Header Container */
+.header_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger_menu {
+  display: none;
+}
+.left_container{
+  display: flex;
+  align-items: center;
+}
+
+.header_left ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.header_left ul li {
+  color: #dfdfdf;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.header_container img {
+  margin-right: 25px;
+}
+
+.header_right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.header_right ul li {
+  cursor: pointer;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 1090px) {
+  .header_left {
+      display: none;
+  }
+  .hamburger_menu {
+      display: block;
+  }
+  .hamburger_menu:hover {
+      cursor: pointer;
+  }
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #ffffff;
+      margin: 5px auto;
+      transition: transform 0.3s ease;
+  }
+  .header_container img{
+    
+  }
+  
+}
+
+/* Media Query for Even Smaller Screens */
+@media screen and (max-width: 550px) {
+  .header_container img {
+      display: none;
+  }
+}
+
+/* Mobile Menu Dropdown */
+.mobile_menu {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.mobile_menu ul {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.mobile_menu ul li {
+  padding: 15px 0;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid #000000;
+}
+
+/* Hamburger Menu Open State */
+.hamburger-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
